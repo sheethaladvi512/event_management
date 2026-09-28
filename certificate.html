@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Certificate — Dr AIT Event Mgmt</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <span class="brand">Dr AIT Event Mgmt</span>
+    <a href="index.html">Admin</a>
+    <a href="register.html">Register</a>
+    <a href="checkin.html">Check-in Scanner</a>
+    <a href="dashboard.html">Live Dashboard</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="certificate.html">Certificate</a>
+  </nav>
+
+  <div class="container">
+    <h1>Download Your Certificate</h1>
+    <p class="subtitle">Enter your ticket code. Available once you've been checked in at the event.</p>
+
+    <div class="card">
+      <form id="certificate-form">
+        <label for="ticketCode">Ticket Code</label>
+        <input type="text" id="ticketCode" placeholder="e.g. 3fa85f64-5717-4562-b3fc-2c963f66afa6" required />
+
+        <button type="submit">Get Certificate (PDF)</button>
+      </form>
+      <p id="certificate-status" style="margin-top:12px;"></p>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/certificate.js"></script>
+</body>
+</html>

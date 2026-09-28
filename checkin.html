@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Check-in Scanner — Dr AIT Event Mgmt</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- Camera-based QR scanning library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html5-qrcode/2.3.8/html5-qrcode.min.js"></script>
+</head>
+<body>
+  <nav>
+    <span class="brand">Dr AIT Event Mgmt</span>
+    <a href="index.html">Admin</a>
+    <a href="register.html">Register</a>
+    <a href="checkin.html">Check-in Scanner</a>
+    <a href="dashboard.html">Live Dashboard</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="certificate.html">Certificate</a>
+  </nav>
+
+  <div class="container">
+    <h1>Check-in Scanner</h1>
+    <p class="subtitle">Point the camera at an attendee's QR ticket.</p>
+
+    <div class="card">
+      <div id="reader"></div>
+      <div id="scan-status" class="idle">Waiting for a scan...</div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/checkin.js"></script>
+</body>
+</html>

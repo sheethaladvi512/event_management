@@ -1,0 +1,23 @@
+{
+  "name": "dr-ait-event-mgmt",
+  "version": "1.0.0",
+  "description": "Dr AIT Event Mgmt — end-to-end event management automation",
+  "main": "api/index.js",
+  "scripts": {
+    "start": "node api/index.js",
+    "dev": "nodemon api/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "qrcode": "^1.5.3",
+    "uuid": "^9.0.1",
+    "pdfkit": "^0.15.0",
+    "nodemailer": "^6.9.14"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}

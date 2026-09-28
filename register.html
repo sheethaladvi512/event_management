@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register — Dr AIT Event Mgmt</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <span class="brand">Dr AIT Event Mgmt</span>
+    <a href="index.html">Admin</a>
+    <a href="register.html">Register</a>
+    <a href="checkin.html">Check-in Scanner</a>
+    <a href="dashboard.html">Live Dashboard</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="certificate.html">Certificate</a>
+  </nav>
+
+  <div class="container">
+    <h1>Register for Event</h1>
+    <p class="subtitle" id="event-name-label">Loading event...</p>
+
+    <div class="card">
+      <form id="register-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" required />
+
+        <button type="submit">Register &amp; Get QR Ticket</button>
+      </form>
+    </div>
+
+    <div class="card" id="qr-result" style="display:none;">
+      <h2 style="margin-top:0;">You're registered! 🎉</h2>
+      <p>Show this QR code at the event entrance for check-in. A confirmation email with this ticket has also been sent, if email is set up.</p>
+      <img id="qr-image" alt="QR ticket" width="220" height="220" />
+      <p style="text-align:center; color:var(--muted); font-size:0.85rem;" id="ticket-code"></p>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/register.js"></script>
+</body>
+</html>

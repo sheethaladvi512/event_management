@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Live Dashboard — Dr AIT Event Mgmt</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <span class="brand">Dr AIT Event Mgmt</span>
+    <a href="index.html">Admin</a>
+    <a href="register.html">Register</a>
+    <a href="checkin.html">Check-in Scanner</a>
+    <a href="dashboard.html">Live Dashboard</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="certificate.html">Certificate</a>
+  </nav>
+
+  <div class="container">
+    <h1>Live Attendance Dashboard</h1>
+    <p class="subtitle" id="event-name-label">Loading event...</p>
+
+    <div class="card stats-row">
+      <div class="stat-box">
+        <div class="value" id="stat-total">0</div>
+        <div class="label">Registered</div>
+      </div>
+      <div class="stat-box">
+        <div class="value" id="stat-checked-in">0</div>
+        <div class="label">Checked In</div>
+      </div>
+      <div class="stat-box">
+        <div class="value" id="stat-remaining">0</div>
+        <div class="label">Remaining</div>
+      </div>
+      <div class="stat-box">
+        <div class="value" id="stat-rating">—</div>
+        <div class="label">Avg. Feedback Rating</div>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Recent Check-ins</h2>
+      <div id="recent-list">No check-ins yet.</div>
+    </div>
+
+    <div class="card">
+      <h2 style="margin-top:0;">Reporting</h2>
+      <p class="subtitle" style="margin-bottom:12px;">Download the full attendee list with check-in status as a spreadsheet-ready CSV.</p>
+      <a id="report-link" href="#"><button type="button">Download Report (CSV)</button></a>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/dashboard.js"></script>
+</body>
+</html>

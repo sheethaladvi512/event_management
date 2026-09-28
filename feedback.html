@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Feedback — Dr AIT Event Mgmt</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <span class="brand">Dr AIT Event Mgmt</span>
+    <a href="index.html">Admin</a>
+    <a href="register.html">Register</a>
+    <a href="checkin.html">Check-in Scanner</a>
+    <a href="dashboard.html">Live Dashboard</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="certificate.html">Certificate</a>
+  </nav>
+
+  <div class="container">
+    <h1>Share Your Feedback</h1>
+    <p class="subtitle">Enter the ticket code from your registration email or QR ticket. No need to re-enter your details.</p>
+
+    <div class="card">
+      <form id="feedback-form">
+        <label for="ticketCode">Ticket Code</label>
+        <input type="text" id="ticketCode" placeholder="e.g. 3fa85f64-5717-4562-b3fc-2c963f66afa6" required />
+
+        <label for="rating">Rating (1–5)</label>
+        <input type="number" id="rating" min="1" max="5" required />
+
+        <label for="comments">Comments (optional)</label>
+        <textarea id="comments" rows="3"></textarea>
+
+        <button type="submit">Submit Feedback</button>
+      </form>
+      <p id="feedback-status" style="margin-top:12px;"></p>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>

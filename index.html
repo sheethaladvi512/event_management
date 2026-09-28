@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Admin — Dr AIT Event Mgmt</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <nav>
+    <span class="brand">Dr AIT Event Mgmt</span>
+    <a href="index.html">Admin</a>
+    <a href="register.html">Register</a>
+    <a href="checkin.html">Check-in Scanner</a>
+    <a href="dashboard.html">Live Dashboard</a>
+    <a href="feedback.html">Feedback</a>
+    <a href="certificate.html">Certificate</a>
+  </nav>
+
+  <div class="container">
+    <h1>Create Event</h1>
+    <p class="subtitle">Set up a new event. Attendees will register against it.</p>
+
+    <div class="card">
+      <form id="event-form">
+        <label for="name">Event Name</label>
+        <input type="text" id="name" required />
+
+        <label for="description">Description</label>
+        <textarea id="description" rows="2"></textarea>
+
+        <label for="venue">Venue</label>
+        <input type="text" id="venue" />
+
+        <label for="startTime">Start Time</label>
+        <input type="datetime-local" id="startTime" required />
+
+        <label for="endTime">End Time</label>
+        <input type="datetime-local" id="endTime" required />
+
+        <label for="capacity">Capacity (0 = unlimited)</label>
+        <input type="number" id="capacity" value="0" min="0" />
+
+        <button type="submit">Create Event</button>
+      </form>
+    </div>
+
+    <h1>All Events</h1>
+    <div class="card">
+      <div id="event-list">Loading events...</div>
+    </div>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
